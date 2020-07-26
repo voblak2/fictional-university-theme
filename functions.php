@@ -7,6 +7,12 @@ function ignite_files()
     wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     wp_enqueue_style('ignite_main_styles', get_stylesheet_uri());
 }
-add_action('wp_enqueue_scripts', 'ignite_files'); 
+add_action('wp_enqueue_scripts', 'ignite_files');
+
+function university_features() {
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'university_features');
 
 ?>
