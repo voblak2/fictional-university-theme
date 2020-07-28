@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
       <div class="site-footer__inner container container--narrow">
         <div class="group">
           <div class="site-footer__col-one">
@@ -112,6 +112,6 @@
               <a href="#"><strong>Fictional</strong> University</a>
             </h1>
             <p><a class="site-footer__link" href="#">555.555.5555</a></p>
-          </div>
+          </div> -->
 
 <?php   get_footer(); ?>

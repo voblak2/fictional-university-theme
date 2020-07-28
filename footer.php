@@ -3,32 +3,38 @@
         <div class="group">
           <div class="site-footer__col-one">
             <h1 class="school-logo-text school-logo-text--alt-color">
-              <a href="<?php echo site_url('/') ?>"><strong>Fictional</strong> University</a>
+              <a href="<?php echo site_url('/') ?>"><strong>Ignite</strong> Church</a>
             </h1>
-            <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+            <p><a class="site-footer__link" href="#">815.297.7808</a></p>
           </div>
 
           <div class="site-footer__col-two-three-group">
             <div class="site-footer__col-two">
               <h3 class="headline headline--small">Explore</h3>
               <nav class="nav-list">
-                <ul>
+                <?php wp_nav_menu(array(
+              'theme_location' => 'footerLocationOne'
+            )); ?>
+                <!-- <ul>
                   <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
                   <li><a href="#">Programs</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">Campuses</a></li>
-                </ul>
+                </ul> -->
               </nav>
             </div>
 
             <div class="site-footer__col-three">
               <h3 class="headline headline--small">Learn</h3>
               <nav class="nav-list">
-                <ul>
+                <?php wp_nav_menu(array(
+              'theme_location' => 'footerLocationTwo'
+            )); ?>
+                <!-- <ul>
                   <li><a href="#">Legal</a></li>
                   <li><a href="<?php echo site_url('/privacy-policy')?>">Privacy</a></li>
                   <li><a href="#">Careers</a></li>
-                </ul>
+                </ul> -->
               </nav>
             </div>
           </div>
