@@ -9,12 +9,14 @@ function ignite_files()
 }
 add_action('wp_enqueue_scripts', 'ignite_files');
 
+/*function university_features below contains the dynamic nav menu items used in the footer and header files. They are the commented out ones*/
+
 function university_features() {
-    register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    /*register_nav_menu('headerMenuLocation', 'Header Menu Location');
     register_nav_menu('footerLocationOne', 'Footer Location One');
-    register_nav_menu('footerLocationTwo', 'Footer Location Two');
+    register_nav_menu('footerLocationTwo', 'Footer Location Two');*/
     add_theme_support('title-tag');
-}
+} 
 
 add_action('after_setup_theme', 'university_features');
 
