@@ -15,12 +15,8 @@
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
         <div class="site-header__menu group">
           <nav class="main-navigation">
-            <!-- <?php wp_nav_menu(array(
-              'theme_location' => 'headerMenuLocation'
-            )); ?> -->
-            <!--Commented out the dynamic nav menus above in favor of the hard coded ones below-->
             <ul>
-              <li <?php if (is_page('about-us')) echo 'class="current_menu_item"' ?>><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
+              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) ==  13) echo 'class="current_menu_item"' ?>><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
               <li><a href="#">Programs</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Campuses</a></li>
